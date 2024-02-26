@@ -25,8 +25,9 @@ from solution.preprocessing import preprocess
 # TODO edit this Config class ! Play with different gain and const values
 @dataclass
 class BraitenbergAgentConfig:
-    gain: float = 0.9
-    const: float = 0.0
+    # both must be between in interval [-1,1]
+    gain: float = 0.1 # tried 0.9, 0.5, 0.75, 0.25
+    const: float = 0.01 # tried 0, 0.1, 0.5, 0.25
 
 
 class BraitenbergAgent:
