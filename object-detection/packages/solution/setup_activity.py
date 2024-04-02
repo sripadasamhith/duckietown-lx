@@ -1,7 +1,7 @@
 DATASET_DIR = "/code/object-detection/assets/duckietown_object_detection_dataset"
 IMAGE_SIZE = 416
 # this is the percentage of real data that will go into the training set (as opposed to the testing set)
-REAL_TRAIN_TEST_SPLIT_PERCENTAGE = 0.8
+REAL_TRAIN_TEST_SPLIT_PERCENTAGE = 0.85 # changed from 0.8
 
 import cv2
 import numpy as np
